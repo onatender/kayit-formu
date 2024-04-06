@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="POST">
+            <div class="form-header">
+                <p>Kayıt Formu</p>
+            </div>
+            <div class="textbox-container">
+                <input class="textbox" type="text" placeholder="Kullanıcı Adı" id="input1">
+                <input class="textbox" type="text" placeholder="E-Posta Hesabı" id="input1">
+                <input class="textbox" type="password" placeholder="Şifre" id="input1">
+                <input class="textbox" type="password" placeholder="Şifre Tekrar" id="input1">
+            </div>
+            <div class="button-container">
+                <input class="btn btn1" type="button" value="KAYDOL">
+                <input class="btn btn2" type="button" value="SİL">
+            </div>
+        </form>
+    </div>
+</body>
+<style>
+    body {
+        background-color: #0093E9;
+        background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        padding-top: 24px;
+    }
+
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+    }
+
+    form {
+        height: 500px;
+        width: 400px;
+        background-color: rgba(255, 255, 255, .5);
+        border-radius: 36px;
+    }
+
+    .textbox {
+        height: 48px;
+        width: 256px;
+        background-color: rgba(255, 255, 255, .8);
+        padding-left: 24px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        border-radius: 12px;
+        margin-bottom: 10px;
+    }
+
+    .btn:hover {
+        cursor: pointer;
+        opacity: .8;
+    }
+
+    .textbox-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
+    form .btn {
+        margin: 0;
+        border: none;
+        height: 42px;
+        width: 141px;
+    }
+
+    form .btn1 {
+        color: white;
+        background-color: purple;
+        border-radius: 12px 0px 0px 12px;
+    }
+
+    .button-container {
+        width: 100%;
+        display: flex;
+        padding-top: 24px;
+        justify-content: center;
+    }
+
+
+    form .btn2 {
+        background-color: rgb(100, 177, 255);
+        border-radius: 0px 12px 12px 0px;
+        transition: 1s;
+    }
+
+
+    .form-container {}
+</style>
+<script>
+
+    // let element = document.getElementsByClassName('btn1')[0];
+    // let element2 = document.getElementsByClassName('btn2')[0];
+    // element.addEventListener('mouseenter', () => {
+    //     for (let i = 0; i <= 100; i++) {
+    //         setTimeout(() => {
+    //             element.style.cssText = `background: linear-gradient(to right, rgb(100, 177, 255) ${i}%, purple ${100-i}%);`;
+    //             element2.style.cssText = `background: linear-gradient(to right, purple ${i}%, rgb(100, 177, 255) ${100-i}%);`;
+    //         }, i * 30);
+    //     }
+    // });
+    //     let num = 0;
+    //     let toadd = .01;
+    //    setInterval(()=>{
+    //     element.style.cssText = `background-color: rgba(255,255,255,${num%.7}); `;
+    //     num += toadd;
+    //     if (num%.7 < .01) toadd *= -1;
+    //    },20);
+
+</script>
+
+</html>
